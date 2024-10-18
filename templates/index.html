@@ -1,0 +1,770 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charles Mark Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}"> 
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'fav/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'fav/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'fav/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'fav/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'fav/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'fav/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'fav/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'fav/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'fav/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'fav/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'fav/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'fav/favicon-96x96.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'fav/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'fav/manifest.json' %}">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{% static 'fav/ms-icon-144x144.png' %}">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- STYLE SWITCHER -->
+    <input type="radio" name="color" id="color-1">
+    <input type="radio" name="color" id="color-2">
+    <input type="radio" name="color" id="color-3">
+    <input type="radio" name="color" id="color-4">
+    <input type="radio" name="color" id="color-5">
+    <input type="radio" name="color" id="color-6">
+    <input type="radio" name="color" id="color-7">
+    <input type="radio" name="color" id="color-8">
+    <input type="radio" name="color" id="color-9">
+    <input type="radio" name="color" id="color-10">
+    <input type="checkbox" name="" id="toggler">
+    <input type="checkbox" name="" id="day-night">
+
+    <div class="style__switcher">
+        <label for="toggler" class="style__switcher-toggler">
+            <i class="fa-solid fa-gear fa-spin"></i>
+        </label>
+
+        <label for="day-night" class="style__switcher-theme">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </label>
+
+        <h3 class="style__switcher-title">Theme Colors</h3>
+
+        <div class="style__switcher-colors">
+            <label for="color-1" class="color color-1"></label>
+            <label for="color-2" class="color color-2"></label>
+            <label for="color-3" class="color color-3"></label>
+            <label for="color-4" class="color color-4"></label>
+            <label for="color-5" class="color color-5"></label>
+            <label for="color-6" class="color color-6"></label>
+            <label for="color-7" class="color color-7"></label>
+            <label for="color-8" class="color color-8"></label>
+            <label for="color-8" class="color color-9"></label>
+            <label for="color-8" class="color color-10"></label>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">Charles Mark</a>
+
+            <input type="checkbox" name="" id="nav-toggler">
+
+            <label for="nav-toggler" class="nav__toggle">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Home</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#qualification" class="nav__link">Qualification</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">Services</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#works" class="nav__link">Portfolio</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+
+            
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <span class="home__small">Hello</span>
+                    <h1 class="home__title">
+                        <span>I'm</span> Charles<br> 
+                        a <span>Backend Engineer</span>
+                    </h1>
+
+                    <p class="home__description">
+                        I'm a backend engineer with expertise in Django and Node.js, specializing in building secure, 
+                        scalable APIs and efficient server-side systems. 
+                        I focus on user authentication, database management, 
+                        and high-performance backend solutions.
+                    </p>
+
+                    <div class="home__btns">
+                        <a href="#contact" class="btn">Hire me</a>
+                        <a href="#works" class="btn btn--transparent">Portfolio</a>
+                    </div>
+                </div>
+
+                <div class="home__img-wrapper">
+                    <img src="{% static 'assets/img/profile.png' %}" alt="" class="home__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__img-wrapper">
+                    <img src="{% static 'assets/img/Charles Mark.jpg' %}" alt="" class="about__img">
+                    <img src="{% static 'assets/img/Charles Mark.jpg' %}" alt="" class="about__img">
+                    <img src="{% static 'assets/img/Charles Mark.jpg' %}" alt="" class="about__img">
+                    <img src="{% static 'assets/img/Charles Mark.jpg' %}" alt="" class="about__img">
+                </div>
+
+                <div class="about__content">
+                    <h2 class="section__title" data-title="who am i?">
+                        I'm Charles Mark, a Backend Software Engineer
+                    </h2>
+
+                    <p class="about__description">
+                        As a backend engineer proficient in Django and Node.js, I specialize in building powerful and efficient server-side applications. 
+                        My expertise in Django allows me to develop secure, 
+                        scalable APIs and manage complex databases using Python, 
+                        while my skills in Node.js enable me to create fast, 
+                        event-driven applications with JavaScript.
+                    </p>
+
+                    <ul class="about__data grid">
+                        <li class="data__item">
+                            <h3 class="data__title">Name:</h3>
+                            <span class="data__description">Charles Mark Kojo</span>
+                        </li>
+
+                        <li class="data__item">
+                            <h3 class="data__title">Age:</h3>
+                            <span class="data__description">23 years</span>
+                        </li>
+
+                        <li class="data__item">
+                            <h3 class="data__title">From:</h3>
+                            <span class="data__description">Abia, Nigeria</span>
+                        </li>
+
+                        <li class="data__item">
+                            <h3 class="data__title">Email:</h3>
+                            <span class="data__description about__link">markcharleskojo@gmail.com</span>
+                        </li>
+                    </ul>
+
+                    <div class="about__bottom">
+                        <a href="" class="btn" download="Charles Mark Resume.pdf">Download CV</a>
+
+                        <div class="about__social-links">
+                            <a href="https://x.com/Charleskojomark" class="about__social-link">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+
+                            <a href="https://www.facebook.com/share/L4HdBPCk6oUxkFw9/" class="about__social-link">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+
+                            <a href="https://github.com/Charleskojomark" class="about__social-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/markcharleskojo" class="about__social-link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUALIFICATION -->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title title-center" data-title="My Journey">
+                Qualification
+            </h2>
+        
+            <div class="resume__container container grid">
+                <div class="resume__group">
+                    <h3 class="resume__heading">Education</h3>
+        
+                    <div class="resume__items">
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">International University of Applied Sciences(Germany)</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+        
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Software Development</h3>
+                                    <span class="resume__date">August 2024 – Present</span>
+                                </div>
+        
+                                <p class="resume__description">
+                                    Enrolled in a comprehensive software development program, focusing on advanced coding principles, software architecture, and backend technologies.
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Harvard University Edx (online)</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+        
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Introduction to Computer Science</h3>
+                                    <span class="resume__date">Jan 2024 </span>
+                                </div>
+        
+                                <p class="resume__description">
+                                    Studying fundamental concepts of computer science, focusing on programming, algorithms, data structures, and web development.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Saylor Academy (online)</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+        
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Introduction to Computer Science</h3>
+                                    <span class="resume__date">2022 – 2023</span>
+                                </div>
+        
+                                <p class="resume__description">
+                                    Completed foundational courses in computer science, focusing on coding, algorithms, data structures, and database management. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="resume__group">
+                    <h3 class="resume__heading">Experience</h3>
+        
+                    <div class="resume__items">
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Innovation Growth Hub</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+        
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Backend Tutor</h3>
+                                    <span class="resume__date">August 2024 – Present</span>
+                                </div>
+        
+                                <p class="resume__description">
+                                    Providing guidance and support to students on backend technologies, focusing on API development, databases, and server-side scripting.
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">Fast Hands Team</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+        
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Backend Developer</h3>
+                                    <span class="resume__date">2024</span>
+                                </div>
+        
+                                <p class="resume__description">
+                                    Worked with the Fast Hands team to develop and integrate backend APIs, ensuring seamless interaction between backend services and the frontend.
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume__subtitle">OJM Electrical Company</h3>
+                                <span class="resume__icon">+</span>
+                            </div>
+        
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume__title">Full Stack Developer</h3>
+                                    <span class="resume__date">March 2024 – July 2024</span>
+                                </div>
+        
+                                <p class="resume__description">
+                                    Built ojmelectrical.com, a site for customers to book electricians, integrating the frontend with HTML, CSS, and JavaScript and designing the backend using Django SSR.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- SERVICES -->
+        <section class="services section" id="services">
+            <h2 class="section__title title-center" data-title="Services">
+                What I can do for you
+            </h2>
+        
+            <div class="services__container container grid">
+                <div class="services__item">
+                    <i class="fa-solid fa-code services_icon"></i>
+        
+                    <h3 class="services__title">Backend Development</h3>
+                    <p class="services__description">
+                        Expertise in designing and implementing robust backend systems, including API development, database management, and server-side scripting using Django, Python, and RESTful architectures.
+                    </p>
+        
+                    <span class="services__no">01</span>
+                </div>
+                
+                <div class="services__item">
+                    <i class="fa-solid fa-laptop services_icon"></i>
+        
+                    <h3 class="services__title">Full Stack Web Development</h3>
+                    <p class="services__description">
+                        Proficient in creating responsive and dynamic websites using HTML, CSS, JavaScript for frontend, and integrating them with powerful backends like Django for full functionality.
+                    </p>
+        
+                    <span class="services__no">02</span>
+                </div>
+                
+                <div class="services__item">
+                    <i class="fa-solid fa-database services_icon"></i>
+        
+                    <h3 class="services__title">Database Design & Management</h3>
+                    <p class="services__description">
+                        Experienced in designing, optimizing, and maintaining databases such as PostgreSQL and MySQL, ensuring efficient data storage, retrieval, and security.
+                    </p>
+        
+                    <span class="services__no">03</span>
+                </div>
+                
+                <div class="services__item">
+                    <i class="fa-solid fa-cogs services_icon"></i>
+        
+                    <h3 class="services__title">API Integration</h3>
+                    <p class="services__description">
+                        Skilled in integrating third-party APIs and developing custom APIs, ensuring seamless communication between various services and applications.
+                    </p>
+        
+                    <span class="services__no">04</span>
+                </div>
+                
+                <div class="services__item">
+                    <i class="fa-solid fa-shield-alt services_icon"></i>
+        
+                    <h3 class="services__title">Web Security</h3>
+                    <p class="services__description">
+                        Focused on implementing security best practices, protecting applications from vulnerabilities such as SQL injections, CSRF, and data breaches.
+                    </p>
+        
+                    <span class="services__no">05</span>
+                </div>
+        
+                <div class="services__item">
+                    <i class="fa-solid fa-users services_icon"></i>
+        
+                    <h3 class="services__title">Technical Mentoring</h3>
+                    <p class="services__description">
+                        Offering mentorship and tutoring in backend development and version control systems, helping students and professionals enhance their technical skills.
+                    </p>
+        
+                    <span class="services__no">06</span>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- SKILLS -->
+        <section class="skills section">
+            <h2 class="section__title title-center" data-title="My Specialization">
+                Professional Skills
+            </h2>
+        
+            <div class="skills__container container grid">
+                <div class="skills__item">
+                    <div class="skills__titles">
+                        <h3 class="skills__name">Python & Django</h3>
+                        <span class="skills__no">90 %</span>
+                    </div>
+        
+                    <p class="skills__description">
+                        Expertise in Python for backend development, building scalable web applications with Django, including dynamic server-side rendering and API integrations.
+                    </p>
+        
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 90%;">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="skills__item">
+                    <div class="skills__titles">
+                        <h3 class="skills__name">Node.js & Express</h3>
+                        <span class="skills__no">85 %</span>
+                    </div>
+        
+                    <p class="skills__description">
+                        Proficient in using JavaScript with Node.js and Express to develop fast, scalable server-side applications and RESTful APIs.
+                    </p>
+        
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 85%;">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="skills__item">
+                    <div class="skills__titles">
+                        <h3 class="skills__name">HTML, CSS & JavaScript</h3>
+                        <span class="skills__no">90 %</span>
+                    </div>
+        
+                    <p class="skills__description">
+                        Advanced knowledge of HTML5, CSS3, and JavaScript for building responsive, user-friendly, and interactive frontend interfaces.
+                    </p>
+        
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 90%;">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="skills__item">
+                    <div class="skills__titles">
+                        <h3 class="skills__name">SQL & NoSQL Databases</h3>
+                        <span class="skills__no">80 %</span>
+                    </div>
+        
+                    <p class="skills__description">
+                        Experience with SQL databases (e.g., PostgreSQL, MySQL) and NoSQL databases (e.g., MongoDB), with a focus on data modeling, query optimization, and security.
+                    </p>
+        
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 80%;">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="skills__item">
+                    <div class="skills__titles">
+                        <h3 class="skills__name">RESTful API Development</h3>
+                        <span class="skills__no">85 %</span>
+                    </div>
+        
+                    <p class="skills__description">
+                        Proficient in developing and integrating RESTful APIs to ensure seamless communication between client-side and server-side systems.
+                    </p>
+        
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 85%;">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="skills__item">
+                    <div class="skills__titles">
+                        <h3 class="skills__name">Data Structures & Algorithms</h3>
+                        <span class="skills__no">80 %</span>
+                    </div>
+        
+                    <p class="skills__description">
+                        Strong understanding of data structures and algorithms, ensuring efficient code performance and scalability in solving complex problems.
+                    </p>
+        
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 80%;">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- PORTFOLIO -->
+        <section class="works section" id="works">
+            <h2 class="section__title title-center" data-title="My Portfolio">
+                Recent Works
+            </h2>
+
+            <div class="work__container container grid">
+                <div class="work__card">
+                    <img src="{% static 'assets/img/work1.jpg' %}" alt="" class="work__img">
+
+                    <div class="work__details">
+                        <h3 class="work__title">ojmelectrical.com</h3>
+                        <span class="work__description">Get electricians in minutes </span>
+                    </div>
+                </div>
+
+                <div class="work__card">
+                    <img src="{% static 'assets/img/fasthands.jpg' %}" alt="" class="work__img">
+
+                    <div class="work__details">
+                        <h3 class="work__title">FastHands</h3>
+                        <span class="work__description">Hire any artisan in any field </span>
+                    </div>
+                </div>
+
+                <div class="work__card">
+                    <img src="{% static 'assets/img/ladicare.jpg' %}" alt="" class="work__img">
+
+                    <div class="work__details">
+                        <h3 class="work__title">LadiCare Chatbot</h3>
+                        <span class="work__description">Works just like FeminaCare AI by ChatGPT</span>
+                    </div>
+                </div>
+
+                <div class="work__card">
+                    <img src="{% static 'assets/img/spiderman.jpg' %}" alt="" class="work__img">
+
+                    <div class="work__details">
+                        <h3 class="work__title">Movies</h3>
+                        <span class="work__description">Movies Website</span>
+                    </div>
+                </div>
+
+                <div class="work__card">
+                    <img src="{% static 'assets/img/delicacy.jpg' %}" alt="" class="work__img">
+
+                    <div class="work__details">
+                        <h3 class="work__title">Delicacy</h3>
+                        <span class="work__description">The best healthy chicken salad</span>
+                    </div>
+                </div>
+
+                <div class="work__card">
+                    <img src="{% static 'assets/img/img6.jpg' %}" alt="" class="work__img">
+
+                    <div class="work__details">
+                        <h3 class="work__title">Terminal</h3>
+                        <span class="work__description">Pushing to GitHub </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials section">
+            <h2 class="section__title title-center" data-title="testimonials">
+                What My Clients Say
+            </h2>
+
+            <div class="testimonials__container container grid">
+                <div class="testimonials__item">
+                    <p class="testimonials__description">
+                        Charles has been an excellent student, consistently showing dedication and a strong understanding of the subject matter. His ability to grasp complex concepts and apply them effectively in his projects has been impressive. Throughout our time working together, he has demonstrated both creativity and technical skill. I am confident that with his positive attitude and strong work ethic, he will  continue to excel in any future endeavors. 
+                    </p>
+
+                    <div class="testimonials__data">
+                        <img src="{% static 'assets/img/parrot.jpg' %}" alt="" class="testimonials__img">
+
+                        <div>
+                            <h3 class="testimonials__name">Mr.Uchechukwu Emmanuel Ani</h3>
+                            <span class="testimonials__identity">Software Engineer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials__item">
+                    <p class="testimonials__description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero adipisci vel similique. Voluptatem ea totam quo laboriosam iure illum itaque suscipit ipsum, ipsam eveniet obcaecati, impedit nihil labore ex corporis.
+                    </p>
+
+                    <div class="testimonials__data">
+                        <img src="{% static 'assets/img/Charles Mark.jpg' %}" alt="" class="testimonials__img">
+
+                        <div>
+                            <h3 class="testimonials__name">Charles Mark</h3>
+                            <span class="testimonials__identity">Abia, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title title-center" data-title="get in touch">
+                Contact Me
+            </h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <i class="fa-solid fa-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call Us</h3>
+                            <span class="contact__data">+234-7082367382</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <i class="fa-solid fa-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email Us</h3>
+                            <span class="contact__data">markcharleskojo@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <i class="fa-solid fa-location-dot contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Address</h3>
+                            <span class="contact__data">2A Umuamala By Uzoiyi, Aba, Abia State</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="{% url 'contact' %}" class="contact__form" id="contactForm">
+                    {% csrf_token %}
+                    <div class="form__group">
+                        <div class="form__input">
+                            {% comment %} <input type="text" id="name" placeholder="Name" class="input__control" required> {% endcomment %}
+                            {{ form.name }}
+                        </div>
+                        <div class="form__input">
+                            {% comment %} <input type="email" id="email" placeholder="Email" class="input__control" required> {% endcomment %}
+                            {{ form.email }}
+                        </div>
+                    </div>
+
+                    <div class="form__input">
+                        {% comment %} <input type="text" id="subject" placeholder="Subject" class="input__control" required> {% endcomment %}
+                        {{ form.subject }}
+                    </div>
+
+                    <div class="form__input">
+                        {% comment %} <textarea name="" id="message" placeholder="Message" id="" cols="30" rows="10" class="input__control textarea" required></textarea> {% endcomment %}
+                        {{ form.message }}
+                    </div>
+
+                    <button type="submit" class="btn contact__btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copyright">
+                &copy; 2024 Charles Mark. All Rights Reserved
+            </p>
+
+            <div class="footer__social-links">
+                <a href="https://x.com/Charleskojomark" class="footer__social-link">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="https://www.facebook.com/share/L4HdBPCk6oUxkFw9/" class="footer__social-link">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+
+                <a href="https://github.com/Charleskojomark" class="footer__social-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/markcharleskojo" class="footer__social-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav__link');
+        const navToggler = document.getElementById('nav-toggler');
+    
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navToggler.checked = false; 
+            });
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission behavior
+    
+            const formData = new FormData(this);
+    
+            // Send form data using fetch API
+            fetch('{% url 'contact' %}', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-CSRFToken': '{{ csrf_token }}'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Message sent successfully!');
+                    this.reset();
+                } else {
+                    alert('Error sending message. Please check your inputs.');
+                    console.error(data.errors);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+    
+</body>
+
+
+</html>
