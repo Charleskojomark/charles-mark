@@ -188,7 +188,8 @@
                     </ul>
 
                     <div class="about__bottom">
-                        <a href="https://charlesmark.onrender.com/templates/CharlesMarkResume.pdf" class="btn" download>Download CV</a>
+                        {% comment %} <a href="https://charlesmark.onrender.com/templates/CharlesMarkResume.pdf" class="btn" download>Download CV</a> {% endcomment %}
+                        <a href="{% static 'CharlesMarkResume.pdf' %}" class="btn" download="CharlesMarkResume.pdf">Download CV</a>
 
                         <div class="about__social-links">
                             <a href="https://x.com/Charleskojomark" class="about__social-link">
